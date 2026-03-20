@@ -1,0 +1,33 @@
+artifact_path: file:d:/repositories/Machine Learning/LnD/Supervised/mlruns/1/models/m-3a995ff9ef8b451cbdd68e0f3f42209d/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.14.4
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.14.0
+model_id: m-3a995ff9ef8b451cbdd68e0f3f42209d
+model_size_bytes: 2190
+model_uuid: m-3a995ff9ef8b451cbdd68e0f3f42209d
+prompts: null
+run_id: ff70b6400c0a4dfe85216e15cade1975
+signature:
+  inputs: '[{"type": "double", "name": "mpg", "required": true}, {"type": "long",
+    "name": "cylinders", "required": true}, {"type": "double", "name": "cubicinches",
+    "required": true}, {"type": "long", "name": "hp", "required": true}, {"type":
+    "double", "name": "weightlbs", "required": true}, {"type": "long", "name": "time-to-60",
+    "required": true}, {"type": "long", "name": "year", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-08-01 11:14:12.927289'
